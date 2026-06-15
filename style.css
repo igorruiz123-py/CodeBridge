@@ -11,42 +11,57 @@ html {
     font-family: Arial, sans-serif;
 }
 
-.heading header {
+body {
+    min-height: 100vh;
     display: flex;
-    flex-direction: row;
-    background: lightseagreen;
-    width: 100vw;   
+    flex-direction: column;
 }
 
-.heading .logo {
+.main-content {
+    flex: 1;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.7);
+    flex-direction: column;
 }
 
-.heading nav {
-    display: flex;
-    flex-direction: row;       
-}
-
-#home a, #about a, #products a, #contact a {
-    text-align: center;
-    color: black;
-    text-decoration: none;
-    
-}
 
 
 /* Mobiles */
 @media (max-width: 767px) {
 
+    /*Header*/
+
+    .heading header {
+        display: flex;
+        flex-direction: row;
+        background: lightseagreen;
+        width: 100vw;   
+    }
+
+    .heading .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    .heading nav {
+        display: flex;
+        flex-direction: row;       
+    }
+
+    #home a, #about a, #products a{
+        text-align: center;
+        color: black;
+        text-decoration: none;
+        
+    }
+
     .heading {
         height: 10vh;
     }
 
-    #home a, #about a, #products a, #contact a {
+    #home a, #about a, #products a {
         font-size: 4.5vmin;
     }
 
@@ -67,6 +82,106 @@ html {
         align-items: center;
         margin-left: 5vmin;     
     }
+
+    /*Header*/
+
+    /*Footer*/
+
+    .footing {
+        margin-top: auto;
+    }
+
+    .footing footer {
+        display: flex;
+        flex-direction: column;
+        background: lightseagreen;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footing footer aside {
+        background: rgba(0, 0, 0, 0.7);
+        margin-top: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    .footing footer nav {
+        display: flex;
+        flex-direction: row;
+        background: rgba(0, 0, 0, 0.3);
+        align-items: flex-end;
+        justify-content: flex-end;
+        
+    }
+
+    .footing footer nav .two-sections {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footing footer nav .contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footing footer {
+        height: 15vh;
+    }
+
+    .footing aside {
+        height: 4vh;
+    }
+
+    .footing footer nav {
+        height: 11vh;
+        width: 100vw;
+    }
+
+    .footing footer nav .two-sections {
+        height: 10vh;
+        width: 50vw;
+    }
+
+    .footing footer nav .icons {
+        height: 5vh;
+        width: 33vw;
+    }
+
+    .footing footer nav .follow-us {
+        margin-left: 8vmin;
+        margin-top: 1vmin;
+    }
+
+    .footing footer nav .icons a img {
+        height: 10vmin;
+        width: 10vmin;
+    }
+
+    .footing footer nav .contact {
+        height: 10vh;
+        width: 67vw;
+    }
+
+    .footing footer nav .contact address p {
+        font-size: 3vmin;
+        color: white;
+    }
+
+    #signature {
+        text-align: center;
+        color: white;
+        font-size: 3vmin;
+    }
+
+    #social-networking {
+        color: white;
+        font-size: 3vmin;
+    }
+
+    /*Footer*/
 
 }
 
