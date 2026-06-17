@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+@media (min-width: 1024px) {
+
+    body {
+    background: whitesmoke;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .main-content {
+        background: white;
+        display: grid;
+        border-radius: 40px;
+        border: solid 3px dimgray;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        width: 80vw;
+        height: 85vh;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .sign-in {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        background: lightseagreen;
+        border-radius: 40px 0 0 40px;
+        width: 35vw;
+    }
+
+    #welcome-back {
+        text-align: center;
+        color: white;
+        font-size: 5vmin;
+    }
+
+    #paragraph-welcome-back {
+        text-align: center;
+        color: white;
+        font-size: 2vmin;
+    }
+
+    #button {
+        width: 10vw;
+        height: 4vh;
+        margin-top: 5%;
+        color: white;
+        background: lightseagreen;
+        font-size: 1.5vmin;
+        border-radius: 30px;
+        border: solid 3px white;
+    }
+
+    .sign-in-content {
+        margin-top: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 20vw;
+        height: 30vh;
+    }
+
+    .sign-up {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 35vw;
+    }
+
+    .sign-up-content {
+        margin-top: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 20vw;
+        height: 30vh;
+    }
+
+    #title-create-account {
+        color: lightseagreen;
+        text-align: center;
+        font-size: 5vmin;
+    }
+
+    #create-account-paragraph {
+        text-align: center;
+        color: gray;
+        font-size: 2vmin;
+    }
+
+    .registration {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 20vw;
+        height: 30vh;
+    }
+
+    .registration i {
+        margin-right: 10px;
+        color: gray;
+    }
+
+    .name {
+        display: flex;
+        align-items: center;
+        background-color: #e9ecef;
+        padding: 1.8vmin;
+        margin-bottom: 10px;
+        border-radius: 30px;
+        width: 20vw;
+        height: 5vh;
+    }
+
+    .email {
+        display: flex;
+        align-items: center;
+        background-color: #e9ecef;
+        padding: 1.8vmin;
+        margin-bottom: 10px;
+        border-radius: 30px;
+        width: 20vw;
+        height: 5vh;
+    }
+
+    .password {
+        display: flex;
+        align-items: center;
+        background-color: #e9ecef;
+        padding: 1.8vmin;
+        margin-bottom: 10px;
+        border-radius: 30px;
+        width: 20vw;
+        height: 5vh;
+    }
+
+    #name-input {
+        border: 0;
+        background: #e9ecef;
+        width: 12vw;
+        height: 2vh;
+    }
+
+    #email-input {
+        border: 0;
+        background: #e9ecef;
+        width: 12vw;
+        height: 2vh;
+    }
+
+    #password-input {
+        border: 0;
+        background: #e9ecef;
+        width: 12vw;
+        height: 2vh;
+    }
+
+}
+
+
+
+/* Mobiles */
+@media (max-width: 767px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        height: 100%;
+        width: 100%;
+        scroll-behavior: smooth;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        min-height: 100vh;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sign-in {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 45vw;
+        background: lightseagreen;
+        align-items: center;
+    }
+
+    .sign-in .sign-in-content header {
+        margin-top: 35vmin;
+    }
+
+    .sign-in .sign-in-content header h1 {
+        text-align: center;
+        color: white;
+    }
+
+    .sign-in .sign-in-content p {
+        margin-top: 10vmin;
+        text-align: center;
+        color: white;
+    }
+
+    .sign-in .sign-in-content form label {
+        margin-top: 5vmin;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sign-in .sign-in-content form label button {
+        background: lightseagreen;
+        text-align: center;
+        color: white;
+        height: 5vh;
+        width: 30vw;
+        border-radius: 20vmin;
+        border: solid white;
+    }
+
+    .sign-up {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        width: 55vw;
+      
+    }
+
+    .sign-up .sign-up-content form section header h1 {
+        margin-top: 35vmin;
+        text-align: center;
+        color: lightseagreen;
+    }
+
+    .sign-up .sign-up-content form section p {
+        margin-top: 5vmin;
+        text-align: center;
+        color: grey;
+    }
+
+    .sign-up .sign-up-content form section .registration label {
+        display: flex;
+        flex-direction: column;
+        gap: 5vmin;
+        width: 30vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sign-up .sign-up-content form section .registration label div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .registration {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .registration label {
+        margin-top: 5vmin;
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 5vmin;
+    }
+
+    .registration label div {
+        height: 5vh;
+        width: 50vw;
+        background: lightseagreen;
+        border-radius: 20vmin;
+        color: gray;
+    }
+
+    .registration input {
+        width: 80%;
+        background: lightseagreen;
+        border: none;
+    }
+
+    .registration label div i {
+        margin-right: 2vmin;
+    }
+
+    .registration button {
+        background: lightseagreen;
+        text-align: center;
+        color: white;
+        height: 5vh;
+        width: 30vw;
+        border-radius: 20vmin;
+        border: none;
+    }
+
+
+}
