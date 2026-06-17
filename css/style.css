@@ -317,12 +317,16 @@ main {
     }
 
     .body header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #C3EDFD;
         height: 40vh;
     }
 
     .body header img {
         height: 40vh;
-        width: 100vw;
+        width: 50vw;
     }
     
     .body article {
