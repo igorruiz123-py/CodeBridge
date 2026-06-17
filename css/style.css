@@ -1,0 +1,491 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+main {
+    flex: 1;
+}
+
+
+/* Mobiles */
+@media (max-width: 767px) {
+
+    /*Header*/
+
+    .heading header {
+        display: flex;
+        flex-direction: row;
+        background: lightseagreen;
+        width: 100vw;   
+    }
+
+    .heading .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    .heading nav {
+        display: flex;
+        flex-direction: row;       
+    }
+
+    #home a, #about a, #products a, #login a{
+        text-align: center;
+        color: black;
+        text-decoration: none;
+        
+    }
+
+    .heading {
+        height: 10vh;
+    }
+
+    #home a, #about a, #products a, #login a {
+        font-size: 4.5vmin;
+    }
+
+    .heading .logo {
+        width: 25vw;
+        height: 10vh;
+    }
+
+    .heading .logo img {
+        width: 35vw;
+        height: auto;
+    }
+
+    .heading nav {
+        display: flex;
+        flex-direction: row;
+        gap: 2vmin;
+        align-items: center;
+        margin-left: 5vmin;     
+    }
+
+    /*Header*/
+
+    /*Body*/
+
+    .body {
+        height: 75vh;
+        background: whitesmoke;
+    }
+
+    .body header {
+        height: 25vh;
+    }
+
+    .body header img {
+        height: 25vh;
+        width: 100vw;
+    }
+    
+    .body article {
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1vmin;
+    }
+
+    .body article h2 {
+        text-align: center;
+        font-size: 5vmin;
+        
+    }
+
+    .body article p {
+        text-align: center;
+        margin-top: 5vmin;
+        font-size: 3.5vmin;
+    }
+
+    .body form {
+        display: flex;
+        flex-direction: column;
+        background: #C3EDFD;
+        height: 50vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .body form label {
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        margin-top: 5vh;
+        gap: 3vmin;
+        align-items: center;
+    }
+
+    .body form label p {
+        text-align: center;
+        font-size: 3.5vmin;
+    }
+
+    .body form label button {
+        text-align: center;
+        font-size: 3.5vmin;
+        background: lightseagreen;
+        border-radius: 20vmin;
+        width: 20vw;
+        height: 3vh;
+        border: none;
+    }
+
+    .body form label div i {
+        margin-right: 10px;
+        color: black;
+    }
+
+    .body form label .icon {
+        display: flex;
+        border-radius: 20vmin;
+        background: lightseagreen;
+        padding: 2vmin;
+    }
+
+    #name-input, #email-input, #phonenumber {
+        border-radius: 20vmin;
+        background: lightseagreen;
+        border: none;
+    }
+
+    /*Body*/
+
+    /*Footer*/
+
+    .footing {
+        margin-top: auto;
+    }
+
+    .footing footer {
+        display: flex;
+        flex-direction: column;
+        background: lightseagreen;
+        
+    }
+
+    .footing .bar {
+        display: flex;
+        flex-direction: row;
+        background: lightseagreen;
+        height: 10vh;
+    }
+
+    .footing .bar .inner {
+        width: 46vw;
+        height: 10vh;
+        background: lightseagreen;
+    }
+
+    .footing .bar .inner .follow-us {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 46vw;
+        height: 2vh;
+    }
+
+    .footing .bar .inner .icons a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3vmin;
+    }
+
+    .footing .bar .inner .icons a img {
+        height: 7vh;
+        width: 12vw;
+    }
+
+    .footing .bar .inner .follow-us p {
+        margin-top: 1vmin;
+        text-align: center;
+        color: white;
+        font-size: 3vmin;
+    }
+
+    .footing .bar .contact {
+        width: 50vw;
+        height: 10vh;
+        background: lightseagreen;
+    }
+
+    .footing .bar  address p {
+        font-size: 3vmin;
+        color: white;
+    }
+
+    .footing .copyright {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.3);
+        width: 100vw;
+        height: 4vh;
+    }
+
+    .footing .copyright p {
+        text-align: center;
+        color: white;
+        font-size: 3vmin;
+    }
+
+    /*Footer*/
+
+}
+
+/* Notebooks and desktops */
+@media (min-width: 1024px) {
+    /*Header*/
+
+    .heading header {
+        display: flex;
+        flex-direction: row;
+        background: lightseagreen; 
+    }
+
+    .heading .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    #home a, #about a, #products a, #login a{
+        text-align: center;
+        color: black;
+        text-decoration: none;
+        
+    }
+
+    .heading {
+        height: 12vh;
+    }
+
+    #home a, #about a, #products a, #login a {
+        font-size: 4vmin;
+    }
+
+    .heading .logo {
+        width: 20vw;
+        height: 12vh;
+    }
+
+    .heading .logo img {
+        width: 20vw;
+        height: 20vh;
+    }
+
+    .heading nav {
+        display: flex;
+        flex-direction: row;
+        gap: 2vmin;
+        align-items: center;
+        margin-left: 10vmin;
+    }
+
+    /*Header*/
+
+    /*Body*/
+
+    .body {
+        
+        background: whitesmoke;
+    }
+
+    .body header {
+        height: 40vh;
+    }
+
+    .body header img {
+        height: 40vh;
+        width: 100vw;
+    }
+    
+    .body article {
+        height: 8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .body article h2 {
+        text-align: center;
+        font-size: 2vmin;
+        
+    }
+
+    .body article p {
+        text-align: center;
+        margin-top: 2vmin;
+        font-size: 1.5vmin;
+    }
+
+    .body form {
+        display: flex;
+        flex-direction: column;
+        background: #C3EDFD;
+        height: 27vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .body form label {
+        height: 27vh;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1vmin;
+        gap: 1vmin;
+        align-items: center;
+    }
+
+    .body form label p {
+        margin-top: 2vmin;
+        text-align: center;
+        font-size: 2vmin;
+    }
+
+    .body form label button {
+        text-align: center;
+        font-size: 2vmin;
+        background: lightseagreen;
+        border-radius: 10vmin;
+        width: 10vw;
+        height: 3vh;
+        border: none;
+    }
+
+    .body form label div i {
+        margin-right: 10px;
+        color: black;
+    }
+
+    .body form label .icon {
+        display: flex;
+        border-radius: 10vmin;
+        background: lightseagreen;
+        padding: 1vmin;
+    }
+
+    #name-input, #email-input, #phonenumber {
+        border-radius: 20vmin;
+        background: lightseagreen;
+        border: none;
+    }
+
+    /*Body*/
+
+    /*Footer*/
+
+    .footing {
+        margin-top: auto;
+    }
+
+    .footing footer {
+        display: flex;
+        flex-direction: column;
+        background: lightseagreen;
+    }
+
+    .footing .bar {
+        display: flex;
+        flex-direction: row;
+        background: lightseagreen;
+        height: 10vh;
+    }
+
+    .footing .bar .inner {
+        width: 50vw;
+        height: 10vh;
+        background: lightseagreen;
+    }
+
+    .footing .bar .inner .follow-us {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+        height: 3vh;
+    }
+
+    .footing .bar .inner .icons a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3vmin;
+    }
+
+    .footing .bar .inner .icons a img {
+        height: 7vh;
+        width: 5vw;
+    }
+
+    .footing .bar .inner .follow-us p {
+        text-align: center;
+        color: white;
+    }
+
+    .footing .bar .contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vw;
+        height: 10vh;
+        background: lightseagreen;
+    }
+
+    .footing .bar .contact address p {
+        color: white;
+        font-size: 2vmin;
+    }
+
+
+    
+
+    .footing .copyright {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.3);
+        width: 100vw;
+        height: 3vh;
+    }
+
+    .footing .copyright p {
+        text-align: center;
+        color: white;
+        font-size:1.5vmin;
+    }
+
+   
+    /*Footer*/
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+}
